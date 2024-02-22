@@ -130,7 +130,7 @@ body {
     padding-bottom: 2rem;
   }
 
-/*
+
   @media only screen  and (min-width: 360px ) and (max-width: 390px) {
     .center-body{
       min-height: 30vh;
@@ -149,7 +149,7 @@ body {
     }
 
     .toDo-list{
-      bottom: 7rem;
+      bottom: 4rem;
       width: 70%;
     }
 
@@ -168,8 +168,7 @@ body {
       padding-bottom: .2rem;
     }
 
-    
-*/
+
   @media only screen  and (min-width: 400px ) and (max-width: 520px) {
     .center-body{
       min-height: 30vh;
