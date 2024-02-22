@@ -1,0 +1,348 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    min-width: 100%;
+    background-color: white;
+  }
+
+  section{
+    position: relative;
+  }
+  
+ 
+ .center-body, main {
+    min-height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15rem;
+  }
+
+  /*.center-body{
+    margin: 0 20rem;
+  }*/
+
+  header{
+    z-index: 0;
+  }
+
+  header input{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 28%;
+    margin: 0 auto;
+    padding: 1.5rem;
+    outline: none;
+    border: 0;
+    border-radius: .5rem;
+    font-size: 1.2rem;
+    position: relative;
+    bottom: 5rem;
+  }
+
+  .center-body h1{
+    color: #fff;
+    letter-spacing: 1rem;
+    font-size: 2.5rem;
+  }
+
+  main{
+    min-height: 60vh;
+    flex-flow: column;
+    background-color: #fff;
+    min-width: 50%;
+    
+  }
+
+  .bg-image-1 {
+    background-image: linear-gradient(to right, #ac2debb3, #5596ffb3),
+      url("./toDo/assets/img/bg-image.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 40vh;
+    z-index: 0;
+  }
+  
+
+  .toDo-list{
+   box-shadow: 3px 3px 15px 1px #535252;
+   border-radius: .5rem;      
+   position: absolute;
+   bottom: 6rem;
+   z-index: 1000;  
+   background-color: #fff;
+  }
+
+  .toDo-list .higher-list ul li{
+    border-bottom: 2px solid #b8b8b6;
+    padding-bottom: 0rem;
+  }
+
+  .toDo-list .higher-list ul li::marker{
+    font-size: 3rem;
+    color: #b8b8b6;
+  }
+
+  .toDo-list ul:first-of-type li{
+    list-style-type: circle;
+    font-size: 1rem;
+    padding-left: 2rem;
+    list-style-position: inside;
+    justify-content: center;
+     }
+
+  .toDo-list .lower-list{
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+    padding: 1rem;
+
+  }
+
+  .toDo-list .lower-list p, .toDo-list .lower-list ul li{
+    font-size: 1em;
+    display: inline-block;
+    color: #b8b8b6;
+    font-weight: 500;
+  }
+
+
+  .toDo-list .lower-list ul li{
+    list-style-type: none;
+    font-weight: 600;
+    padding: 0rem .5rem;
+  }
+
+  .toDo-list .lower-list ul li:first-child{
+    color: blue;
+  }
+
+  main > .last-para {
+    color: #b8b8b6;
+    position: relative;
+    top: 12rem;
+    padding-bottom: 2rem;
+  }
+
+/*
+  @media only screen  and (min-width: 360px ) and (max-width: 390px) {
+    .center-body{
+      min-height: 30vh;
+      gap: 5rem;
+    }
+
+    .center-body h1{
+      font-size: 1.5rem;
+    }
+
+    header input{
+      width: 62%;
+      bottom: 4rem;
+      padding: .8rem;
+      font-size: .7rem;
+    }
+
+    .toDo-list{
+      bottom: 7rem;
+      width: 70%;
+    }
+
+    .toDo-list ul:first-of-type li{
+      padding-left: 1rem;
+      font-size: .7rem;
+    }
+
+    .toDo-list .lower-list{
+      font-size: .5rem;
+      gap: .3rem;
+    }
+
+    .toDo-list .lower-list ul li {
+      padding: 0rem;
+      padding-bottom: .2rem;
+    }
+
+    
+*/
+  @media only screen  and (min-width: 400px ) and (max-width: 520px) {
+    .center-body{
+      min-height: 30vh;
+      gap: 5rem;
+    }
+
+    .center-body h1{
+      font-size: 2rem;
+    }
+
+    header input{
+      width: 62%;
+      bottom: 4rem;
+      padding: .8rem;
+    }
+
+    .toDo-list{
+      bottom: 15rem;
+      width: 70%;
+    }
+
+    .toDo-list .lower-list{
+      font-size: .5rem;
+      gap: .5rem;
+    }
+
+    main > .last-para{
+      top: 7rem;
+    }
+
+
+  }
+  
+
+  @media only screen  and (min-width: 540px ) and (max-width: 700px) {
+
+    
+    .center-body{
+      min-height: 30vh;
+      gap: 11rem;
+    }
+
+    header input{
+      width: 65%;
+      bottom: 4rem;
+      padding: 1rem;
+    }
+
+    .toDo-list{
+      bottom: 6rem;
+      width: 70%;
+    }
+
+    .toDo-list .lower-list{
+      font-size: .7rem;
+    }
+
+    main > .last-para{
+      top: 11rem;
+    }
+
+
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 800px) {
+    header input{
+      width: 55%;
+    }
+
+    .toDo-list{
+      bottom: 17rem;
+    }
+
+    main > .last-para{
+      top: 7rem;
+    }
+  }
+
+  @media screen and (min-width: 820px) and (max-width: 911px){
+    header input{
+      width: 52%;
+    }
+
+    .toDo-list{
+      bottom: 22rem;
+    }
+
+    main > .last-para{
+      padding-bottom: 0rem;
+    }
+
+  }
+
+  @media screen and (min-width: 912px) {
+    header input{
+      width: 45%;
+    }
+
+
+    .toDo-list{
+      bottom: 29rem;
+      
+    }
+
+    main > .last-para{
+      top: 1rem;
+    }
+
+
+  }
+
+  @media screen and (min-width: 981px) {
+    header input{
+      width: 40%;
+    }
+
+
+    .toDo-list{
+      bottom: 25rem;
+      min-width: 36%;
+      
+    }
+
+    main > .last-para{
+      top: 1rem;
+    }
+
+
+  }
+
+
+
+
+  @media screen and (min-width: 1024px) and (max-width: 1200px) {
+    header input{
+      width: 42%;
+    }
+
+    .toDo-list{
+      bottom: 2rem;
+    }
+
+    main > .last-para{
+      padding-bottom: 2rem;
+      top: 12rem;
+    }
+
+  }
+
+  @media screen and (min-width: 1280px) {
+    main{
+      min-height: 100vh;
+    }
+
+    .bg-image-1{
+      max-height: 35vh;
+    }    
+
+    .center-body{
+      min-height: 30vh;
+    }
+
+    header input{
+      width: 33%;
+    }
+
+    main > .last-para{
+      margin-top: 0rem;
+      top: 1rem;    
+    }
+
+  }
+
+  
+
+  
