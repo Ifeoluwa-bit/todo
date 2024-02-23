@@ -131,7 +131,7 @@ body {
   }
 
 
-  @media only screen  and (min-width: 360px ) and (max-width: 390px) {
+  /*@media only screen  and (min-width: 360px ) and (max-width: 390px) {
     .center-body{
       min-height: 30vh;
       gap: 5rem;
@@ -167,9 +167,42 @@ body {
       padding: 0rem;
       padding-bottom: .2rem;
     }
+*/
+    
 
+  @media only screen  and (min-width: 400px ) and (max-width: 412px) {
+    .center-body{
+      min-height: 30vh;
+      gap: 5rem;
+    }
 
-  @media only screen  and (min-width: 400px ) and (max-width: 520px) {
+    .center-body h1{
+      font-size: 2rem;
+    }
+
+    header input{
+      width: 60%;
+      bottom: 4rem;
+      padding: .8rem;
+    }
+
+    .toDo-list{
+      bottom: 15rem;
+      width: 70%;
+    }
+
+    .toDo-list .lower-list{
+      font-size: .5rem;
+      gap: .5rem;
+    }
+
+    main > .last-para{
+      top: 7rem;
+    }
+
+  }
+
+  @media only screen  and (min-width: 414px ) and (max-width: 520px) {
     .center-body{
       min-height: 30vh;
       gap: 5rem;
@@ -202,6 +235,7 @@ body {
 
   }
   
+
 
   @media only screen  and (min-width: 540px ) and (max-width: 700px) {
 
@@ -344,4 +378,4 @@ body {
 
   
 
-  
+}
