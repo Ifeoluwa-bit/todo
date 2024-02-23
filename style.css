@@ -131,7 +131,7 @@ body {
   }
 
 
-  /*@media only screen  and (min-width: 360px ) and (max-width: 390px) {
+  @media only screen  and (min-width: 390px ) {
     .center-body{
       min-height: 30vh;
       gap: 5rem;
@@ -149,7 +149,7 @@ body {
     }
 
     .toDo-list{
-      bottom: 4rem;
+      bottom: 12rem;
       width: 70%;
     }
 
@@ -167,7 +167,7 @@ body {
       padding: 0rem;
       padding-bottom: .2rem;
     }
-*/
+
     
 
   @media only screen  and (min-width: 400px ) and (max-width: 412px) {
